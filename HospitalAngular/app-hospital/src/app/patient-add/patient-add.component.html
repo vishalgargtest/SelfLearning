@@ -1,0 +1,30 @@
+<form #form="ngForm" (ngSubmit)="onSubmit(form)">
+    <ul class="list-group">
+        <li class="list-group-item text-danger" *ngIf="name.errors?.required && name.touched">The name is required</li>
+      </ul>
+<div class="form-group">
+    <label for="">Name:</label>
+    <input type="text" name="name" #name="ngModel" ngModel class="form-control" id="usr" required>
+  </div>
+  <div class="form-group">
+    <label for="pwd">Fathername:</label>
+    <input type="text" name="Fathername" ngModel class="form-control" id="Fathername" required>
+  </div>
+  <div class="form-group">
+      <label for="usr">Location:</label>
+      <input type="text" name="Location" ngModel class="form-control" id="Location" required>
+    </div>
+    <div class="form-group">
+      <label for="pwd">admittedDate:</label>
+      <input type="text" name="admittedDate" ngModel class="form-control" id="admittedDate" required>
+    </div>
+    <div class="form-group">
+        <label for="usr">Balance:</label>
+        <input type="text" name="Balance" ngModel class="form-control" id="Balance" required>
+      </div>
+      <div class="form-group" required>
+          
+          <input type="submit"   id="usr">
+        </div>
+    </form>
+    
